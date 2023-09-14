@@ -1,0 +1,15 @@
+app:
+  name: evanshortiss-poi-backend-app
+  namespace: evanshortiss
+  cluster: .apps.rosa-bvg5j.wov7.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/rhdh-vegas/evanshortiss-backend
+  org: rhdh-vegas
+  name: evanshortiss-backend
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: evanshortiss/poi-backend-app
+  tag: latest
